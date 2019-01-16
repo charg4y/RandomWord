@@ -2,7 +2,8 @@
 var request = new XMLHttpRequest();
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://random-word-api.herokuapp.com/word?key=ZY5D1BPH&number=1', true);
+//Substitute your api key here
+request.open('GET', 'https://random-word-api.herokuapp.com/word?key=APIKEY&number=1', true);
 
 request.onload = function () {
   //get data from api
