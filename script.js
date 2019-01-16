@@ -5,9 +5,11 @@ var request = new XMLHttpRequest();
 request.open('GET', 'https://random-word-api.herokuapp.com/word?key=ZY5D1BPH&number=1', true);
 
 request.onload = function () {
+  //get data from api
   let data = JSON.parse(this.response);
+  //log data in console
   console.log(data);
-
+  // set text to data
   document.getElementById("word").innerHTML = data[0];
 
  }
